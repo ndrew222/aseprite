@@ -10,6 +10,9 @@ jobs:
         build_type: [Release]
         ui: [gui, cli]
         scripting: [lua, noscripts]
+        exclude:
+          - ui: cli
+            scripting: noscripts
     steps:
     - uses: actions/checkout@v4
       with:
