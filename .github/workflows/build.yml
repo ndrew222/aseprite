@@ -109,6 +109,6 @@ jobs:
         $XVFB bash run-tests.sh
     - name: Upload binary artifact
       uses: actions/upload-artifact@v4
-      ith:
+      with:
         name: aseprite-${{ matrix.os }}-${{ matrix.build_type }}-${{ matrix.ui }}-${{ matrix.scripting }}
         path: build/bin/
